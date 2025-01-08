@@ -318,3 +318,28 @@
     padding: 10px 0 0;
     color: #fff;
 }
+
+/* FOOTER */
+.footer {
+    background-color: #05051D;
+    color: #fff;
+}
+
+.f-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 40px;
+}
+
+.f-cont {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-cont img {
+    width: 100%;
+}
