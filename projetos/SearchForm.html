@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+
+    <link rel="stylesheet" href="../assets/css/searchForm.css">
+</head>
+<body>
+    <main>
+        <h1>Pesquisa de Satisfação</h1>
+        <p>Sua Opinião é Importante para Nós!</p>
+        <form>
+            <div class="input-group">
+                <label for="input-name">Name</label>
+                <input type="text" class="w-input padding-input" id="input-name" placeholder="Digite seu nome">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" class="w-input padding-input" id="input-email" placeholder="Digite seu email">
+            </div>
+            <div class="input-group">
+                <label for="number">Idade (opcional)</label>
+                <input type="number" class="w-input padding-input" placeholder="Digite sua idade">
+            </div>
+            <div class="input-group">
+                <p>Qual opção descreve melhor sua função atual?</p>
+                <select name="role" class="form-control" required>
+                    <option disabled selected value>Selecione sua função atual</option>
+                    <option value="student">Estudante</option>
+                    <option value="job">Trabalho em tempo integral</option>
+                    <option value="learner">Aluno em tempo integral</option>
+                    <option value="preferNo">Prefiro não dizer</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <p>Você me recomendaria a um amigo?</p>
+                <label>
+                    <input type="radio" name="user-recommend" value="definitely" checked class="input-radio">
+                    Definitivamente
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="maybe" class="input-radio">
+                    Talvez
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="not-sure" class="input-radio">
+                    Não tenho certeza
+                </label>
+            </div>
+            <div class="input-group">
+                <p>Qual projeto do meu portfólio você mais gosta?</p>
+                <select name="role" required>
+                    <option disabled selected value>Selecione o projeto</option>
+                    <option value="landingPage">Landing Page</option>
+                    <option value="formularioPesquisa">Formulario de Pesquisa</option>
+                    <option value="portfolio">Portfólio</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <p>Algum comentário ou sugestão?</p>
+                <textarea name="comment" id="comment" placeholder="Deixe seu comentário aqui..."></textarea>
+            </div>
+            <div class="input-group">
+                <button class="submit-button" id="enviar">Enviar</button>
+            </div>
+        </form>
+        <div class="btn-voltar">
+            <button><a href="../index.html">VOLTAR</a></button>
+        </div>
+    </main>
+
+    <script src="/assets/js/search.js"></script>
+</body>
+</html>

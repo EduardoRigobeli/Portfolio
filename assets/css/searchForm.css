@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-black: #000;
+    --color-clear: #fff;
+    --background-clear: #820AD1;
+    --background-black: #2F0549;
+    --background-blur: #8181817c;
+    --shadow: #05050575;
+    --font: 'Poppins';
+}
+
+
+/* ! CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/assets/image/pexels-anna-nekrashevich-6801648.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.input-group select, input, textarea {
+    border: none;
+    outline: none; /* Remove a borda de foco padrão */
+    border-radius: 6px;
+}
+
+.input-group select, textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-group input {
+    font-size: 16px;
+}
+
+.input-group .w-input {
+    width: 350px;
+}
+
+.input-group .padding-input {
+    padding: 5px;
+}
+
+button {
+    font-size: 20px;
+    background-color: var(--color-black);
+    color: var(--color-clear);
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+}
+
+/* *ESTILO DO MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+}
+
+main h1 {
+    margin-top: 500px;
+    margin-bottom: 5px;
+    color: var(--background-clear);
+}
+
+main p {
+    margin-bottom: 15px;
+    color: var(--background-black);
+    text-decoration: underline;
+}
+
+/* ?ESTILO DO FORM */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-blur); /* Cor de fundo com opacidade */
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--shadow);
+    width: 500px;
+    padding: 15px 0;
+}
+
+form .input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+form .input-group input {
+    width: 200px;
+}
+
+form .input-group p {
+    padding: 0;
+    margin: 3px;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+/*? TOPO DO FORM */
+
+
+/* *ESTILO DO INPUT RADIO */
+form .input-group label input {
+    width: 10px;
+}
+
+form .input-group label input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* *ESTILO DO TEXTAREA */
+.input-group textarea {
+    resize: none;
+    height: 100px;
+    width: 390px;
+}
+
+/* ?ESTILO GERAL DO BOTÃO VOLTAR */
+.btn-voltar {
+    margin: 20px 0 10px;
+}
+
+.btn-voltar a {
+    text-decoration: none;
+    color: var(--color-clear);
+}
+
+.btn-voltar a:hover {
+    color: var(--color-black);
+}
