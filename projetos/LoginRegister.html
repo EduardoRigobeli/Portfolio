@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+
+    <link rel="stylesheet" href="/assets/css/loginRegister.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--FORM LOGIN-->
+        <div id="form-login">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <i class="bi bi-envelope-check-fill"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <div class="toggle-link" onclick="toggleForms()">Não tem uma conta? Registre-se</div>
+
+            <button id="btn" onclick="entrar()">Entrar</button>
+        </div>
+
+        <!--FORM REGISTER-->
+        <div id="form-register" class="hidden">
+            <h2>Registrar-se</h2>
+            <div class="input-group">
+                <input type="text" id="register-user" placeholder="Ususario" required>
+                <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="input-group">
+                <input type="email" id="register-email" placeholder="Email" required>
+                <i class="bi bi-envelope-check-fill"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" id="register-password" placeholder="Senha" required>
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" id="register-confirm-password" placeholder="Confirme a senha" required>
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <div class="toggle-link" onclick="toggleForms()">Já possui uma conta? Faça login</div>
+
+            <button id="btn" onclick="register()">Registrar</button>
+        </div><!--FORM-REGISTER-->
+    </div><!--CONTAINER-->
+
+    <div class="btn-voltar">
+        <a href="../index.html">
+            <button>VOLTAR</button>
+        </a>
+    </div>
+
+    <script src="../assets/js/loginRegister.js"></script>
+</body>
+</html>
