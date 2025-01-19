@@ -15,7 +15,13 @@
     --promotion: #FF0000;
     --background-dark: #282828;
     --background-category: #D9D9D9;
+    --background-shadow: #1d1d1d38;
+    --color-shadow: #0000006c;
     --font: 'Inter';
+}
+
+body {
+    background-color: #f0f0f0;
 }
 
 /*! ESTILOS GERAIS */
@@ -27,6 +33,23 @@ a {
     text-decoration: none;
     color: var(--primary-color);
     transition: .2s;
+}
+
+button {
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--background-price);
+    border: 2px solid var(--background-price);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid var(--background-price);
+    color: var(--primary-color);
 }
 
 /** CABEÇALHO */
@@ -56,22 +79,6 @@ a {
     margin: 10px 10px;
 }
 
-.header-email button {
-    font-size: 19px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: var(--background-price);
-    border: 2px solid var(--background-price);
-    cursor: pointer;
-    transition: .5s;
-}
-
-.header-email button:hover {
-    background-color: transparent;
-    border: 2px solid var(--background-price);
-    color: var(--primary-color);
-}
-
 /** CABEÇALHO NAV */
 .header-nav nav ul {
     display: flex;
@@ -88,4 +95,57 @@ a {
 
 .header-nav nav ul li a:hover {
     color: #6d6d6d;
+}
+
+/*? ESTILO TOPO SITE*/
+.topo {
+    background-color: #a8a8a8;
+    background: url('/assets/imagemEcommerce/pexels-karolina-grabowska-5632397.jpg');
+    background-repeat: no-repeat;/*EVITA DA IMAGEM NÃO FICAR SE REPETINDO*/
+    background-size: cover;/*DEIXA A IMAGEM 100% NO ELEMENTO*/
+    background-position: center;/*CENTRALIZA A IMAGEM NO ELEMENTO*/
+    border-radius: 30px;
+    box-shadow: 0 0 10px var(--background-shadow);
+    width: 80%;
+    margin: 20px auto 0;
+    height: 540px;
+}
+
+.topo .topo-mensagem {
+    color: var(--primary-color);
+    display: flex;
+    width: 380px;
+    justify-content: center;
+    height: 90%;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.topo .topo-mensagem .melhor-preco {
+    background-color: red;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: default;
+    box-shadow: 0 0 5px var(--background-shadow);
+}
+
+.topo .topo-mensagem .melhor-preco p {
+    padding: 5px;
+    margin: 0;
+}
+ 
+.topo .topo-mensagem h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.topo .topo-mensagem h2, .topo .topo-mensagem p {
+    text-shadow: 0 0 5px var(--color-shadow);
+}
+
+
+
+.topo .topo-mensagem p {
+    margin-bottom: 10px;
 }
