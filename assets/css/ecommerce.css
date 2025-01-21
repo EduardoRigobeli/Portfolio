@@ -9,11 +9,13 @@
 
 :root {
     --primary-color: #fff;
+    --background-clean: #fff;
     --second-color: #000;
     --background-price: #008D2C;
     --background-price-dark: #004717;
     --promotion: #FF0000;
     --background-dark: #282828;
+    --border: #6b6b6b;
     --background-category: #D9D9D9;
     --background-shadow: #1d1d1d38;
     --color-shadow: #0000006c;
@@ -21,7 +23,7 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #c9c9c9;
 }
 
 /*! ESTILOS GERAIS */
@@ -50,6 +52,23 @@ button:hover {
     background-color: transparent;
     border: 2px solid var(--background-price);
     color: var(--primary-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.novidade, .oferta {
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--background-shadow);
+}
+
+.oferta:hover, .novidade:hover {
+    transform: scale(1.02);
+}
+
+.oferta .oferta-interno p, .oferta .oferta-interno h3 {
+    text-shadow: 0 0 5px var(--color-shadow);
 }
 
 /** CABEÇALHO */
@@ -144,8 +163,185 @@ button:hover {
     text-shadow: 0 0 5px var(--color-shadow);
 }
 
-
-
 .topo .topo-mensagem p {
     margin-bottom: 10px;
+}
+
+/** ESTILOS DE OFERTA */
+.ofertas-novidades .flex {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 4%;
+}
+
+.ofertas-novidades .oferta {
+    background: url('/assets/imagemEcommerce/iphone16.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    transition: .2s;
+}
+
+.oferta .oferta-interno {
+    width: 350px;
+    margin: 90px 0 0 30px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.oferta .oferta-interno h3 {
+    margin: 5px 0;
+}
+
+.oferta .oferta-interno p span {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.oferta .oferta-interno .btn-comprar {
+    margin-top: 10px;
+}
+
+
+/** ESTILOS DE NOVIDADE */
+.ofertas-novidades .novidade {
+    background: url('/assets/imagemEcommerce/fonePromo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    transition: .2s;
+}
+
+.novidade .novidade-interno {
+    width: 350px;
+    margin: 90px 0 0 150px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.novidade .novidade-interno span {
+    text-decoration: underline;
+}
+
+.novidade .novidade-interno h3 {
+    margin: 5px 0;
+}
+
+.novidade .novidade-interno .btn-comprar {
+    margin-top: 10px;
+}
+
+/*? ESTILO DE BENEFICIOS */
+.beneficios {
+    box-shadow: 0 0 10px var(--background-shadow);
+}
+
+.beneficios .flex {
+    justify-content: center;
+    align-items: center;
+    padding: 40px 8%;
+    background-color: white;
+    gap: 90px;
+    font-size: 35px;
+    cursor: default;
+}
+
+.beneficios .retirada {
+    width: 300px;
+} 
+
+.retirada, .frete-gratis, .preco-baixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficios .flex i {
+    font-size: 90px;
+    margin-right: 15px;
+    color: var(--background-price);
+}
+
+/*? ESTILO DO VENDIDO */
+.vendidos {
+    margin: 80px 0;
+    padding: 40px 4%;
+    background-color: var(--background-clean);
+    box-shadow: 0 0 10px var(--background-shadow);
+}
+
+.vendidos h1 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.vendidos .flex {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.flex-group {
+    height: 300px;
+    width: 200px;
+    border: 1px solid var(--border);
+    transition: .2s;
+}
+
+.flex-group:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border: 1px solid var(--background-price);
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--background-shadow);
+}
+
+.flex-group .img-produto {
+    width: 150px;
+    height: 160px;
+    margin: auto;
+    padding: 10px;
+}
+
+.flex-group .promo {
+    background-color: var(--promotion);
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.flex-group .promo p {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.flex-group p {
+    margin-left: 10px;
+}
+
+.flex-group .preco {
+    margin-top: 10px;
+}
+
+.flex-group .preco p {
+    padding: 2px 0;
+    color: var(--background-price);
+}
+
+.flex-group .preco .linha-meio {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;/*AUMENTAR A ESPESSURA DA LINHA*/
+}
+
+.flex-group .img-produto img {
+    width: 100%;
+    height: 100%;
 }
