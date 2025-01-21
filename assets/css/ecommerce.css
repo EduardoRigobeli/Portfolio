@@ -289,6 +289,10 @@ button:hover {
     gap: 50px;
 }
 
+.vendidos .flex a {
+    color: var(--second-color);
+}
+
 .flex-group {
     height: 300px;
     width: 200px;
@@ -405,4 +409,116 @@ button:hover {
 
 .categorias .category-circle i {
     font-size: 100px;
+}
+
+/*? ESTILO DO RODAPÉ */
+.rodape {
+    background-color: var(--background-dark);
+    color: var(--primary-color);
+    padding: 40px 4%;
+}
+
+.rodape .flex {
+    align-items: center;
+}
+
+.logo-social {
+    margin-right: 25px;
+}
+
+.logo-social .logo {
+    margin: auto auto 20px auto;
+}
+
+.logo {
+    width: 120px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.social {
+    width: 300px;
+    display: flex;
+    gap: 30px;
+}
+
+.social-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.social-group img {
+    width: 50px;
+}
+
+.social-group:hover {
+    transform: scale(1.05);
+}
+
+#insta img, #face img {
+    width: 40px;
+}
+
+.parceiras-devs-legal {
+    display: flex;
+    gap: 100px; 
+}
+
+.creditos-group h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.creditos-group p {
+    font: normal 200 30px var(--font);/*font-style - font-weight - font-size - font-family*/
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;/*FUNCIONA SOMENTE QUANDO É LINHA HORIZONTAL (underline e <hr>)*/
+}
+
+.metodo-pagamento {
+    padding: 40px 0;
+}
+
+.metodo-pagamento p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.metodo-pagamento .img-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metodo-pagamento .img-pagamento img {
+    border-radius: 10px;
+    width: 55%;
+}
+
+hr {
+    border: 1px solid var(--background-category);
+    width: 1000px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.copy {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
 }
