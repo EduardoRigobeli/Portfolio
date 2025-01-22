@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #fff;
+    --background-clean: #fff;
+    --second-color: #000;
+    --background-price: #008D2C;
+    --background-price-dark: #004717;
+    --promotion: #FF0000;
+    --background-dark: #282828;
+    --border: #6b6b6b;
+    --background-category: #c0c0c0;
+    --background-shadow: #1d1d1d38;
+    --color-shadow: #0000006c;
+    --font: 'Inter';
+}
+
+
+/** ESTILO DO CORPO */
+.container {
+    background-color: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 40px 4%;
+    box-shadow: 0 0 10px var(--background-shadow);
+    border-radius: 20px;
+}
+
+.container .apresentation {
+    width: 90%;
+    margin: auto;
+}
+
+.container p {
+    font-size: 25px;
+    margin: 15px 0;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.container a {
+    color: var(--background-price);
+    text-decoration: underline;
+}
+
+
+/*? ESTILO DOS DESENVOLVEDORES */
+#desenvolvedores h1 {
+    margin: 50px 0 0 0;
+}
+
+#desenvolvedores .subtitle {
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#desenvolvedores .flex {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/** ESTILO DOS DEVS */  
+.rigobeli, .davanso {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.davanso .foto-dev img {
+    margin-left: 20px;
+}
+
+.foto-dev {
+    width: 300px;
+}
+
+.sobre-dev p {
+    font-size: 40px;
+}
+
+.sobre-dev ul {
+    margin-left: 40px;
+}
+
+.sobre-dev ul li {
+    list-style-type: disc;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+
+
+.rigobeli img, .davanso img {
+    width: 100%;
+    border-radius: 20px;
+}
