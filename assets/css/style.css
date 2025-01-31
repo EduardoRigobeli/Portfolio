@@ -291,7 +291,10 @@ section.sobre .flex {
 section.projetos {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
+}
 
+.projetos .interface .flex { 
+    flex-wrap: wrap;
 }
 
 .projetos .projetos-box {
