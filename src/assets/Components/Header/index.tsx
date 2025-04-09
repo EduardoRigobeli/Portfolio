@@ -10,16 +10,16 @@ function Header() {
 
             <ul className={styles.nav_links}>
                 <li className={styles.link}>
-                    <a href="#">Início</a>
+                    <a href="#inicio">Início</a>
                 </li>
                 <li className={styles.link}>
-                    <a href="#">Características</a>
+                    <a href="#servicos">Serviços</a>
                 </li>
                 <li className={styles.link}>
-                    <a href="#">Preços</a>
+                    <a href="#works">Works</a>
                 </li>
                 <li className={styles.link}>
-                    <a href="#">Sobre</a>
+                    <a href="#sobre">Sobre</a>
                 </li>
             </ul>
             

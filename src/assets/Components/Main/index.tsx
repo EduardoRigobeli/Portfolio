@@ -5,7 +5,7 @@ import { FaCheck } from "react-icons/fa";
 function Main() {
     return (
     <>
-        <header className={styles.container}>
+        <header id='inicio' className={styles.container}>
             <span className={styles.blur}></span>
             <span className={styles.blur}></span>
             
@@ -15,7 +15,7 @@ function Main() {
                 <p>
                     Seu site não pode ser mais um na multidão. Com desenvolvimento personalizado, performance otimizada e um design que converte visitantes em clientes, seu projeto terá a qualidade de um profissional—sem complicações. <br />Menos templates, mais resultados. Vamos começar?
                 </p>
-                <button className={styles.btn}>Comece</button>
+                <a href="https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20me%20interessei%20no%20seu%20trabalho!" target='_blank'><button className={styles.btn}>Comece</button></a>
             </div>
 
             <div className={styles.image}>
@@ -23,7 +23,7 @@ function Main() {
             </div>
         </header>
 
-        <section className={styles.container}>
+        <section id='servicos' className={styles.container}>
             <h2 className={styles.header}>Serviços</h2>
 
             <div className={styles.features}>
@@ -38,7 +38,7 @@ function Main() {
                         <li className={styles.price}><strong>R$ 1.500</strong></li>
                     </ul>
 
-                    <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
+                    <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' target='_blank' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
                 </div>
 
                 <div className={styles.card}>
@@ -52,7 +52,7 @@ function Main() {
                         <li className={styles.price}><strong>R$ 3.900</strong></li>
                     </ul>
 
-                    <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
+                    <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' target='_blank' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
                 </div>
                 <div className={styles.card}>
                     <h4>Personalizado</h4>
@@ -64,7 +64,19 @@ function Main() {
                         <li><FaCheck className={styles.icon}/> Timeline flexível</li>
                     </ul>
 
-                    <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
+                    <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' target='_blank' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
+                </div>
+            </div>
+        </section>
+
+        <section id='works' className={styles.container}>
+            <h2 className={styles.header}>Works</h2>
+            <div className={styles.works}>
+                <div className={styles.card}>
+                    <h5>NOME DO PROJETO</h5>
+                    <p>TECNOLOGIAS</p>
+                    <p>GITHUB</p>
+                    <p>LINK AO VIVO</p>
                 </div>
             </div>
         </section>
