@@ -9,11 +9,18 @@ function Footer(){
         <footer className={styles.container}>
             <span className={styles.blur}></span>
             <span className={styles.blur}></span>
+
             <div className={styles.column}>
-                <img src="../../public/Letter R for Business Logo.png" />
+                <div className={styles.logo}>
+                    <img src="../../public/Letter R for Business Logo.png" />
+                </div>
                 <p>
                     Está espereando o que? Venha construir interfaces incríveis que encantam e convertem!
                 </p>
+            </div>
+            
+            <div className={styles.column}>
+                <h4>Contatos</h4>
                 <div className={styles.socials}>
                     <a href="#"><FaGithub /></a>
                     <a href="#"><MdEmail /></a>
@@ -21,10 +28,10 @@ function Footer(){
                     <a href="#"><FaFacebook /></a>
                 </div>
             </div>
-            <div className={styles.column}>
-                
-            </div>
         </footer>
+        <div className={styles.copyright}>
+            &copy; Feito por Eduardo Rigobeli
+        </div>
         </>
     )
 }
