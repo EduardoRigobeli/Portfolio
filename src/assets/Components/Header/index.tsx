@@ -18,9 +18,6 @@ function Header() {
                 <li className={styles.link}>
                     <a href="#works">Works</a>
                 </li>
-                <li className={styles.link}>
-                    <a href="#sobre">Sobre</a>
-                </li>
             </ul>
             
             <button className={styles.btn}>Contrate me</button>

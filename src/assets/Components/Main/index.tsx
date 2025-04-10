@@ -74,11 +74,6 @@ function Main() {
             <h2 className={styles.header}>Works</h2>
             <Works />
         </section>
-
-        <section id='sobre' className={styles.container}>
-            <h2 className={styles.header}>Sobre</h2>
-            
-        </section>
     </>
     )
 }

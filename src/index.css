@@ -25,6 +25,14 @@ a {
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #18181B;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
