@@ -20,7 +20,7 @@ function Header() {
                 </li>
             </ul>
             
-            <button className={styles.btn}>Contrate me</button>
+            <a href="https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20me%20interessei%20no%20seu%20trabalho!" target="_blank"><button className={styles.btn}>Contrate me</button></a>
         </nav>
     </>
   );

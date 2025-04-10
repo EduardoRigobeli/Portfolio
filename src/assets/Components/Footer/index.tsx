@@ -4,6 +4,10 @@ import { MdEmail } from "react-icons/md";
 import { FiInstagram } from "react-icons/fi";
 
 function Footer(){
+    const email = "rigobelicontato@gmail.com";
+    const subject = "Contato pelo site";
+    const body = "Olá,\n\nGostaria de mais informações sobre seus serviços!";
+
     return(
         <>
         <footer className={styles.container}>
@@ -22,10 +26,10 @@ function Footer(){
             <div className={styles.column}>
                 <h4>Contatos</h4>
                 <div className={styles.socials}>
-                    <a href="#"><FaGithub /></a>
-                    <a href="#"><MdEmail /></a>
-                    <a href="#"><FiInstagram /></a>
-                    <a href="#"><FaFacebook /></a>
+                    <a href="https://github.com/EduardoRigobeli" target='_blank'><FaGithub /></a>
+                    <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} target='_blank' aria-label='Enviar Email'><MdEmail /></a>
+                    <a href="https://www.instagram.com/rigobeli.dev/" target='_blank'><FiInstagram /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61572498851599&locale=pt_BR" target='_blank'><FaFacebook /></a>
                 </div>
             </div>
         </footer>

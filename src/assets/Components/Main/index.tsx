@@ -36,7 +36,7 @@ function Main() {
                         <li><FaCheck className={styles.icon}/> Formulário de Contato</li>
                         <li><FaCheck className={styles.icon}/> Hospedagem</li>
                         <li><FaCheck className={styles.icon}/> 1 revisão</li>
-                        <li className={styles.price}><strong>R$ 1.500</strong></li>
+                        <li className={styles.price}><strong>R$ 1.000</strong></li>
                     </ul>
 
                     <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' target='_blank' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
@@ -50,7 +50,7 @@ function Main() {
                         <li><FaCheck className={styles.icon}/> SEO Técnico (Front-End Only)                        </li>
                         <li><FaCheck className={styles.icon}/> Hospedagem</li>
                         <li><FaCheck className={styles.icon}/> 2 revisão</li>
-                        <li className={styles.price}><strong>R$ 3.900</strong></li>
+                        <li className={styles.price}><strong>R$ 2.500</strong></li>
                     </ul>
 
                     <a href='https://api.whatsapp.com/send?phone=5544998664234&text=Olá,%20quero%20o%20pacote%20Landing%20Page!' target='_blank' className={styles.btn_cnt}>Quero esse pacote <FaArrowRight /></a>
