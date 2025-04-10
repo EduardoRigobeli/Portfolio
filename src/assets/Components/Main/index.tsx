@@ -1,6 +1,7 @@
 import styles from './main.module.css'
 import { FaArrowRight } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa";
+import Works from '../../../Projetos/Works';
 
 function Main() {
     return (
@@ -71,14 +72,12 @@ function Main() {
 
         <section id='works' className={styles.container}>
             <h2 className={styles.header}>Works</h2>
-            <div className={styles.works}>
-                <div className={styles.card}>
-                    <h5>NOME DO PROJETO</h5>
-                    <p>TECNOLOGIAS</p>
-                    <p>GITHUB</p>
-                    <p>LINK AO VIVO</p>
-                </div>
-            </div>
+            <Works />
+        </section>
+
+        <section id='sobre' className={styles.container}>
+            <h2 className={styles.header}>Sobre</h2>
+            
         </section>
     </>
     )

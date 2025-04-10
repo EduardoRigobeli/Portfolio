@@ -1,0 +1,64 @@
+.works_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    max-width: 1200px;
+}
+
+.works_container .works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #27272a;
+    border: 2px solid transparent;
+    cursor: default;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 500px;
+    height: 300px;
+    transition: all .3s ease;
+}
+
+.works_container .works:hover{
+    background-color: #323232;
+    border-color: #ccc;
+}
+
+.works_container .works a{
+    color: #ccc;
+}
+
+.works_container .works h4{
+    color: #ccc;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.works_container .works p{
+    font-weight: 500;
+    margin: 0.4rem 0;
+    color: #fff;
+}
+
+.works_container .works .icon a{
+    font-size: 2rem;
+    transition: all 0.3 ease;
+}
+
+.works_container .works .icon a:hover{
+    color: blue;
+}
+
+.works_container .works .link{
+    background-color: #1d4ed8;
+    padding: 0.7rem;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+}
+
+.works_container .works .link:hover{
+    background-color: #1e40af;
+}
