@@ -53,3 +53,19 @@ nav a img {
 .btn:hover {
     background-color: #1e40af;
 }
+
+.side_bar {
+    display: none;
+}
+
+@media (max-width: 428px) {
+    .side_bar{
+        display: flex;
+        font-size: 2rem;
+        color: #ccc;
+    }
+
+    .btn, .nav_links {
+        display: none;
+    }
+}
