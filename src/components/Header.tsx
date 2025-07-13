@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="flex items-center justify-center h-15">
-            <ul className="flex gap-8 text-white bg-black p-3 rounded-lg">
+        <header className="flex items-center justify-center h-25">
+            <ul className="flex gap-8 text-white border-2 border-gray-200 p-3.5 rounded-full backdrop-blur-md">
                 <li>
                     <Link href="/" className="">Início</Link>
                 </li>
