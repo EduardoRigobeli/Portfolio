@@ -1,9 +1,7 @@
-import Header from "@/components/Header";
-
-export default function Sobre() {
+export default function Contato() {
     return (
         <>
-            <Header />
+            CONTATO
         </>
     )
 }
