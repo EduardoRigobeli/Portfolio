@@ -33,7 +33,7 @@ export default function RootLayout({
           </video>
         </div>
 
-        <Header />
+        <Header />  
 
         <main className="relative z-10">
           {children}
