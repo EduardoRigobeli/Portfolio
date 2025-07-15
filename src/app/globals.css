@@ -1,2 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+    --animate-t-b: typing 1.5s steps(9), blinking 0.5s infinite step-end alternate;
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes blinking {
+        50% {
+            border-color: transparent; 
+        }
+    }
+}
