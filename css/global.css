@@ -25,20 +25,25 @@ body{
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         background-color: var(--bg-color-second);
-
         width: 500px;
         padding: 10px;
         margin: 15px auto;
         border-radius: 20px;
-        
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1000;
+        border: 2px solid transparent;
+        transition: .2s ease-in-out;
+
         .links{
-            list-style-type: none;
             display: flex;
             gap: 2rem;
             align-items: center;
             justify-content: center;
         
             .link {
+                text-decoration: none;
                 cursor: pointer;
                 position: relative;
             }
@@ -61,5 +66,25 @@ body{
         }
     }
 
+    .menu-bg:hover {
+        border: 2px solid var(--primary-color);
+    }
+
+    main {
+        height: 100vh;
+
+        #inicio {
+            height: 100vh;
+            background-color: red; /*COR TEMPORARIA*/
+            img {
+                width:200px;
+            }
+        }
+
+        #sobre {
+            height: 100vh;
+            background-color: blue; /*COR TEMPORARIA*/
+        }
+    }
     
 }
