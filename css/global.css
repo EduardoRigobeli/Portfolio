@@ -4,7 +4,7 @@
 
 :root {
     --font-primary: 'Inter';
-    --font-second: 'JetBrains Mono';
+    --font-second: 'JetBrains Mono', monospace;
     --bg-color: #f1f1f1;
     --bg-color-second: rgba(134, 134, 134, 0.2);
     --primary-color: #1A1A1A;
@@ -14,12 +14,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-primary);
     color: var(--primary-color);
 }
 
 body{
     background-color: var(--bg-color);
+    font-family: var(--font-primary);
 
     .menu-bg {
         backdrop-filter: blur(10px);
@@ -74,10 +74,44 @@ body{
         height: 100vh;
 
         #inicio {
+            font-family: var(--font-second);
             height: 100vh;
-            background-color: red; /*COR TEMPORARIA*/
-            img {
-                width:200px;
+
+            .img {
+                width: 390px;
+                position: relative;
+                top: 54.2%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+
+                img {
+                    width: 390px;
+                }
+            }
+
+            .front_end {
+                position: absolute;
+                top: 37%;
+                left: 52%;
+                transform: translate(-50%, -50%);
+                word-spacing: 120px;
+                
+                h1 {
+                    font-size: 190px;
+                    font-weight: 900;
+                    width: 1201px;
+                }
+            }
+
+            .texto {
+                width: 410px;
+                font-weight: bold;
+                font-size: 18px;    
+                text-align: center;
+                position: absolute;
+                top: 65%;
+                left: 28%;
+                transform: translate(-50%, -50%);
             }
         }
 
