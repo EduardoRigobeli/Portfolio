@@ -89,7 +89,7 @@ body{
                 }
             }
 
-            .front_end {
+            .titulo {
                 position: absolute;
                 top: 37%;
                 left: 52%;
@@ -121,4 +121,18 @@ body{
         }
     }
     
+}
+
+/* ADICIONE ISSO NO FINAL DO ARQUIVO (depois de tudo): */
+.cursor {
+    animation: piscar 0.7s infinite !important;
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
