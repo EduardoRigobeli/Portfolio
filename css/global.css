@@ -10,6 +10,10 @@
     --primary-color: #1A1A1A;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -114,11 +118,6 @@ body{
                 transform: translate(-50%, -50%);
             }
         }
-
-        #sobre {
-            height: 100vh;
-            background-color: blue; /*COR TEMPORARIA*/
-        }
     }
     
 }
@@ -136,3 +135,4 @@ body{
         opacity: 0;
     }
 }
+
