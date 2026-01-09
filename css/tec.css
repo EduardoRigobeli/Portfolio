@@ -1,0 +1,125 @@
+:root {
+    --font-primary: 'Inter';
+    --font-second: 'JetBrains Mono', monospace;
+    --bg-color: #f1f1f1;
+    --bg-color-second: rgba(134, 134, 134, 0.2);
+    --primary-color: #1A1A1A;
+}
+
+#tec {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    .tecs {
+        border: 2px solid black;
+        border-radius: 8px;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+
+        i {
+            font-size: 100px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .tecs:nth-child(1):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #f065296b;
+
+        i {
+            color: #e34f26;
+        }
+    }
+
+    .tecs:nth-child(2):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #0a53fdb0;
+    
+        i {
+            color: #0a53fdb0;
+        }
+    }
+
+    .tecs:nth-child(3):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgb(228, 186, 0);
+    
+        i {
+            color: rgb(228, 186, 0);
+        }
+    }
+
+    .tecs:nth-child(4):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #61dbfb;
+    
+        i {
+            color: #61dbfb;
+        }
+    }
+
+    .tecs:nth-child(5):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #f0db4fb0;
+    
+        i {
+            color: #f0db4fb0;
+        }
+    }
+
+    .tecs:nth-child(6):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #0004ff;
+    
+        i {
+            color: #0004ff;
+        }
+    }
+
+    .tecs:nth-child(7):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #ee4300;
+    
+        i {
+            color: #ee4300;
+        }
+    }
+
+    .tecs:nth-child(8):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px black;
+    
+        i {
+            color: black;
+        }
+    }
+
+    .tecs:nth-child(9):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgb(22, 22, 22);
+    }
+
+    .tecs:nth-child(10) {
+        i {
+            color: var(--primary-color);
+        }
+    }
+
+    .tecs:nth-child(10):hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #06b6d4;
+    
+        i {
+            color: #06b6d4;
+        }
+    }
+}
