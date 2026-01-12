@@ -122,7 +122,6 @@ body{
     
 }
 
-/* ADICIONE ISSO NO FINAL DO ARQUIVO (depois de tudo): */
 .cursor {
     animation: piscar 0.7s infinite !important;
 }
