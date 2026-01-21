@@ -1,8 +1,122 @@
-@media (max-width: 450px) {
+.mobile-menu {
+  display: none !important; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  z-index: 1001;
+  padding: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 3px 3px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.mobile-menu .nav-item {
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 12px 0;
+  display: block;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu.open {
+  display: block !important; 
+}
+
+.mobile-menu-icon {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 83%;
+}
+
+.mobile-menu-icon button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-icon i {
+  color: white;
+  font-size: 32px;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 450px) {
   body {
     .menu-bg {
       display: none;
     }
+
+    .nav-bar {
+    padding: 0 1.5rem;
+    position: relative;
+    height: 10vh;
+  }
+
+  .nav-list {
+    display: none !important;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-menu {
+    position: fixed; 
+    top: 10vh; 
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 10vh);
+    background-color: rgb(31, 31, 31);
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+    display: block;
+  }
+
+  .mobile-menu ul {
+    padding-top: 30px;
+    gap: 25px;
+  }
+
+  .mobile-menu .nav-link {
+    font-size: 1.4rem;
+    padding: 15px 0;
+  }
 
     main {
       #inicio {
@@ -26,12 +140,12 @@
       }
 
       #sobre {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         text-align: center;
 
         .apresentacao {
-          margin-top: 130px;
           width: 100%;
           font-size: 20px;
           padding: 20px;
@@ -40,8 +154,6 @@
         .img-sobre {
           width: 280px;
           height: 260px;
-          margin: 0 auto;
-          margin-top: 50px;
 
           img {
             width: 100%;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/tec.css" />
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/header.css" />
 
     <link
       rel="stylesheet"
@@ -36,13 +37,30 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   </head>
   <body>
-    <header class="menu-bg">
-      <nav class="links">
-        <a href="#inicio" class="link">INICIO</a>
-        <a href="#sobre" class="link">SOBRE</a>
-        <a href="#tec" class="link">TECNOLOGIAS</a>
-        <a href="#contato" class="link">CONTATO</a>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#inicio" class="nav-link">INICIO</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link">SOBRE</a></li>
+            <li class="nav-item"><a href="#tec" class="nav-link">TECNOLOGIAS</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link">CONTATO</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><i class="icon bi bi-list"></i></button>
+        </div>
       </nav>
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#inicio" class="nav-link">INICIO</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">SOBRE</a></li>
+          <li class="nav-item"><a href="#tec" class="nav-link">TECNOLOGIAS</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link">CONTATO</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -114,17 +132,17 @@
         </div>
       </section>
 
-      <section id="contato" title="@rigobeli.dev">
-        <div class="ctt">
+      <section id="contato">
+        <div class="ctt" title="@rigobeli.dev">
           <i class="bi bi-instagram"></i>
         </div>
-        <div class="ctt">
+        <div class="ctt" title="rigobelicontato@gmail.com">
           <i class="bi bi-envelope-fill"></i>
         </div>
-        <div class="ctt">
+        <div class="ctt" title="Eduardo Rigobeli">
           <i class="bi bi-facebook"></i>
         </div>
-        <div class="ctt">
+        <div class="ctt" title="Eduardo Rigobeli">
           <i class="bi bi-linkedin"></i>
         </div>
       </section>
@@ -132,5 +150,6 @@
 
     <script src="js/animationText.js"></script>
     <script src="js/aparecerElemento.js"></script>
+    <script src="js/mobile.js"></script>
   </body>
 </html>

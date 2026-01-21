@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 6rem;
+    background-color: rgb(31, 31, 31);
 
     .ctt {
         width: 200px;
@@ -16,10 +17,12 @@
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease;
+        border-color: white;
 
         i {
             font-size: 100px;
             transition: all 0.3s ease;
+            color: white;
         }
     }
 

@@ -26,55 +26,6 @@ body{
     background-color: var(--bg-color);
     font-family: var(--font-primary);
 
-    .menu-bg {
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        background-color: var(--bg-color-second);
-        width: 500px;
-        padding: 10px;
-        margin: 15px auto;
-        border-radius: 20px;
-        position: fixed;
-        left: 50%;
-        transform: translate(-50%);
-        z-index: 1000;
-        border: 2px solid transparent;
-        transition: .2s ease-in-out;
-
-        .links{
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            justify-content: center;
-        
-            .link {
-                text-decoration: none;
-                cursor: pointer;
-                position: relative;
-            }
-
-            .link::after {
-                content: " ";
-                width: 0%;
-                height: 2px;
-                border-radius: 2px;
-                background-color: black;
-                position: absolute;
-                left: 0;
-                bottom: -1px;
-                transition: .5s ease-in-out;
-            }
-
-            .link:hover::after{
-                width: 100%;
-            }
-        }
-    }
-
-    .menu-bg:hover {
-        border: 2px solid var(--primary-color);
-    }
-
     main {
         height: 100vh;
 
