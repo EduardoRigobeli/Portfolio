@@ -10,7 +10,7 @@ Aqui dentro você vai encontrar:
 
 ## 🚀 Acesso rápido
 
-Quer ver como ficou? Dá uma olhada no ar: **[Link do Portfólio]**
+Quer ver como ficou? Dá uma olhada no ar: **https://rigobelidev.netlify.app/**
 
 ## 🧪 Rodando localmente
 
